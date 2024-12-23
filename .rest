@@ -1,0 +1,29 @@
+### get all tasks
+GET http://localhost/giftcard8/tasks.php
+
+### add a task
+POST http://localhost/giftcard8/tasks.php
+Content-Type: application/json
+
+{
+    "name": "Task 1",
+    "description": "Description 1"
+}
+
+### update a task
+PUT http://localhost/giftcard8/tasks.php
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Task 1",
+    "description": "Description 1"
+}
+
+### delete a task
+DELETE http://localhost/giftcard8/tasks.php
+Content-Type: application/json
+
+{
+    "id": 1
+}
